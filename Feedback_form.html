@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Feedback Form</h2>
+        <form id="feedbackForm">
+
+            <label for="feedbackServices"></label>
+            <textarea name="feedbackServices" required placeholder="write few words regards our Service"
+                rows="4"></textarea>
+            <div id="select">
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" required value="male">
+                <label class="male"> Male</label> <br>
+                <input type="radio" id="female" name="gender" value="female"> <br>
+                <label class="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other"> <br>
+                <label class="other">Other</label>
+            </div>
+
+            <label id="rating">Rating out of 10:</label>
+            <input type="number" id="rate" required name="rating" min="1" max="10">
+
+
+
+            <label id="feedbackCategory">Feedback Category:</label>
+            <select name="feedbackCategory" required>
+                <option value="Good">Good</option>
+                <option value="Average">Average</option>
+                <option value="Poor">Poor</option>
+                <option value="Excellent">Excellent</option>
+
+            </select>
+
+            <input type="submit" value="Submit">
+        </form>
+        <div id="displayFeedback"></div>
+    </div>
+
+    <script src="INDEX..JS"></script>
+</body>
+
+</html>
